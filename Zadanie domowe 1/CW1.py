@@ -27,11 +27,15 @@ zad10()
 
 
 def zad11():
-    from math import sin as s, cos as c, radians as r
-    a = ['0', '30', '45', '60', '90']
-    b = s(r(int(a[4])))
-    print(b)
-    print(s(r(90)))
+    from math import sin, cos, tan, radians
+    kat = [0, 30, 45, 60, 90]
+    s = [sin(radians(i)) for i in kat]
+    c = [cos(radians(i)) for i in kat]
+    t = [tan(radians(i)) for i in kat]
+    t[4] = 0
+    print('Kąt\tSinus\tCosinus\tTang')
+    for i in range(len(kat)):
+        print(f"{kat[i]}\t{s[i]:.2f}\t{c[i]:.2f}\t{t[i]:.2f}")
 
 
 zad11()
