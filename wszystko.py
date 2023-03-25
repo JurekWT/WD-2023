@@ -36,14 +36,46 @@
 # print('Zmienna b:%(z2)f' % {'z2':b})
 # print('Zmienna c:%(z3)x' % {'z3':c})
 
-# Zadanie 10
-# lista=['kilera','kilerów 2-óch','django','hari pota','interstellar']
-# print('Lista ulubionych filmów',lista)
-# lista.append('incepcja')
-# lista.insert(1,'wladca pierscieni')
-# print('Lista ulubionych filmów',lista)
-# lista.sort()
-# print('Lista po sortowaniu',lista)
+# def zad6():
+#     a = "I'm covering my ears like a kid\n" \
+#         "When your words mean nothing, I go la la la\n" \
+#         "I'm turning up the volume when you speak\n" \
+#         "'Cause if my heart can't stop it\n" \
+#         "I find a way to block it, I go\n" \
+#         "La la, la la la la la na na na na na\n" \
+#         "La la na na, la la la la la na na na na na\n" \
+#         "I find a way to block it, I go\n" \
+#         "La la na na, la la la la la na na na na na\n" \
+#         "La la na na, la la la la la na na na na na\n"
+#     print('Ilość "la" w tekście:', a.count('la'))
+#
+#
+# zad6()
+
+# def zad10():
+#     lista = ['Kiler', 'Kilerów 2-óch', 'Django', 'Hari Pota', 'Interstellar', 'Incepcja', 'Władca Pierścieni',
+#              'Zombeavers', 'Sarnie Żniwo']
+#     print('Lista ulubionych filmów', lista)
+#     lista.sort()
+#     print('Lista po sortowaniu:', lista)
+#
+#
+# zad10()
+
+# def zad11():
+#     from math import sin, cos, tan, radians
+#     kat = [0, 30, 45, 60, 90]
+#     s = [sin(radians(i)) for i in kat]
+#     c = [cos(radians(i)) for i in kat]
+#     t = [tan(radians(i)) for i in kat]
+#     t[4] = 0
+#     print('Kąt\tSinus\tCosinus\tTang')
+#     for i in range(len(kat)):
+#         print(f"{kat[i]}\t{s[i]:.2f}\t{c[i]:.2f}\t{t[i]:.2f}")
+#
+#
+# zad11()
+
 
 # Zadanie 12
 # a='Ala ma kota i psa'
@@ -53,18 +85,32 @@
 # Zadanie 15
 # rzymskie = {'I':1, 'II':2, 'III':3, 'IV':4, 'V':5,'VI':6,'VII':7}
 
-# Zadanie 13
-# ksywy = {'Łysy': 'Łukasz Tymofiejczyk', 'Gruby': 'Jerzy Tymofiejczyk', 'Janek': 'Łukasz Tymofiejczyk',
-#           'Dostatni': 'Łukasz Dostatni', 'Kwadrat': 'Arkadiusz Keller', 'Chudy': 'Oskar Głowacki'}
-# print(ksywy['Łysy'],ksywy['Gruby'],ksywy['Chudy'])
+# def zad13():
+#     ksywy = {'Łysy': 'Łukasz Tymofiejczyk', 'Gruby': 'Jerzy Tymofiejczyk', 'Janek': 'Łukasz Januszewski',
+#              'Mały': 'Łukasz Dostatni', 'Kwadrat': 'Arkadiusz Keller', 'Chudy': 'Oskar Głowacki',
+#              'Kurak': 'Andrzej Cłapka', 'Peja': 'Ryszard Waldemar Andrzejewski', 'Liliha': 'Julia Wierszelis',
+#              'Szop': 'Michał Tanaś'}
+#     print(ksywy['Peja'])
+#
+#
+# zad13()
 
-# Zadanie 14
-# skroty={'cb':'ciebie','wgl':'w ogóle','kc':'kocham cię','bk':'beka'}
+# def zad14():
+#     skroty = {'cb': 'ciebie', 'wgl': 'w ogóle', 'kc': 'kocham cię', 'bk': 'beka', 'nwm': 'nie wiem'}
+#     slownik = skroty.copy()
+#     print(slownik['cb'])
+#
+#
+# zad14()
 
-# Zadanie 16
-# gry={'RPG':'Baldur Gate','FPS':'Doom','MMORPG':'World of Warcraft','TPP':'Max Payne'}
-# print(len(gry))
-# print(gry['FPS'])
+# def zad16():
+#     gry = {"RPG": ["Baldur's Gate", "Fallout 1-4", "Wiedźmin"], "FPS": ["Doom", "Quake"], "MMORPG": "World of Warcraft",
+#            "TPP": "Max Payne"}
+#     print(len(gry))
+#     print(len(gry['RPG']))
+#
+#
+# zad16()
 
 
 # CW 2
@@ -138,6 +184,27 @@
 #             sys.stdout.write('A')
 #         sys.stdout.write('\n')
 
+# def zad11():
+#     print("Podaj wysokość diamentu (w przedziale 3-9): ")
+#     a = int(input())
+#     if a < 3 or a > 9:
+#         print("Zła wysokość")
+#         return 0
+#     elif a%2==1:
+#         for i in range(1, a + 1, 2):
+#             print(" " * (a - i // 2) + "*" * i)
+#         for i in range(a - 2, 0, -2):
+#             print(" " * (a - i // 2) + "*" * i)
+#     else:
+#         for i in range(1, a + 1, 2):
+#             print(" " * (a - i // 2) + "*" * i)
+#         for i in range(a - 1, 0, -2):
+#             print(" " * (a - i // 2) + "*" * i)
+#
+#
+# zad11()
+
+
 # Zadanie 12
 #
 # for i in range(1,11):
@@ -155,11 +222,14 @@
 # except ValueError:
 #     print('Nie można pierwiastkować liczb ujemnych')
 
-# Zadanie 15
-# try:
-#     liczba=int(input('Podaj liczbę'))
-# except ValueError:
-#     print('Nie podano liczby')
+# def zad15():
+#     try:
+#         liczba = int(input('Podaj liczbę\n'))
+#     except ValueError:
+#         print('Nie podano liczby')
+#
+#
+# zad15()
 
 
 # CW 3
@@ -200,24 +270,25 @@
 
 # Zadanie 6
 
-# Zadanie 8
-# def ciag(*liczby):
+# def zad8(*liczby):
 #     if len(liczby) == 0:
 #         return 0
 #     else:
 #         iloczyn = 1
 #         for i in liczby:
 #             iloczyn *= i
-#         return iloczyn
+#         print(iloczyn)
 #
 #
-# print(ciag())
-# print(ciag(1,2,4,5,8))
+# zad8(1, 5, 6, 8)
 
-# Zadanie 9
-# def zakupy(** lista):
-#     if len(lista)==0:
-#         return 'Lista zakupów jest pusta'
+# def zad9(suma=0, **produkty):
+#     for i in produkty:
+#         suma += produkty[i]
+#     print('Ilość produktów:', suma)
+#
+#
+# zad9(cziperki=5, cola=4, monsterki=12)
 
 # Zadanie 10
 # from zespol import *
@@ -234,4 +305,16 @@
 # print(geom.nty(a,b,c))
 # print(geom.suma(a))
 # print(geom.nty(a))
+
+# def zad11(a,b,c):
+#     from ciagi import arytm, geom
+#     print(arytm.suma(a, b, c))
+#     print(arytm.nty(a, b))
+#     print(geom.nty(a, b, c))
+#     print(geom.suma(a))
+#     print(geom.nty(a))
+#
+#
+# zad11(1,2,4)
+
 
