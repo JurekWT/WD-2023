@@ -5,7 +5,7 @@ import numpy as np
 df = pd.read_excel('uczniowie2.xlsx')
 x = np.arange(2015, 2020)
 print(x)
-plt.scatter(x, df['Wartość'], color='red', marker='D', label='Ilość osób' )
+plt.scatter(x, df['Wartość'], color='red', marker='D', label='Ilość osób')
 plt.xticks(x)
 plt.xlabel('Rok')
 plt.ylabel('Ilośc osób')

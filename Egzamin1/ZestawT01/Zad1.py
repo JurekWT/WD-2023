@@ -4,13 +4,13 @@ import numpy as np
 
 gry = pd.DataFrame(
     {
-        'Miesiąc': ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec'],
+        'Miesiąc': ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec'],
         'Zyski': [22, 33, 41, 75, 65, 50]
     }
 )
 filmy = pd.DataFrame(
     {
-        'Miesiąc': ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec'],
+        'Miesiąc': ['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec'],
         'Zyski': [50, 41, 38, 23, 24, 30]
     }
 )

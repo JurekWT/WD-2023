@@ -1,6 +1,5 @@
-import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
+import pandas as pd
 
 df = pd.read_excel('produkcja3.xlsx', header=None)
 df = df.transpose()
